@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090812">
+<title>IT инфрақұрылым сабағы — тапсырмасы</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">✦</span> IT<span class="brand-light"> INFRASTRUCTURE</span></a>
+  <div class="top-note"><span class="pulse"></span> STUDENT ACCESS PORTAL</div>
+</header>
+<main class="layout">
+  <section class="intro">
+    <div class="eyebrow"><span></span> ОҚУ ЖОБАСЫ • 2026</div>
+    <h1>IT<br><span>INFRA.</span></h1>
+    <p class="lead">IT инфрақұрылым сабағының тапсырмасы. Тіркеліңіз, жүйеге кіріңіз және жеке кабинетіңізді ашыңыз.</p>
+    <div class="signature"><div class="signature-line"></div><div><small>ЖОБАНЫ ОРЫНДАҒАН</small><strong>Сайполла Асхат</strong></div></div>
+    <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+  </section>
+  <section class="auth-card" id="authCard">
+    <div class="card-glow"></div>
+    <div class="tabs"><button class="tab active" data-mode="login">Кіру</button><button class="tab" data-mode="register">Тіркелу</button></div>
+    <div class="card-heading"><div class="mini-icon">✧</div><h2 id="formTitle">Жүйеге қош келдіңіз</h2><p id="formSubtitle">Аккаунтыңызға кіру үшін деректерді енгізіңіз.</p></div>
+    <form id="authForm">
+      <label for="username">ЛОГИН</label><div class="input-wrap"><span>＠</span><input id="username" name="username" autocomplete="username" placeholder="Мысалы: askhat01" minlength="3" maxlength="24" required></div>
+      <label for="password">ҚҰПИЯСӨЗ</label><div class="input-wrap"><span>✳</span><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Кемінде 8 таңба" minlength="8" required><button type="button" class="show-pass" id="showPass">КӨРСЕТУ</button></div>
+      <button class="submit-btn" id="submitBtn" type="submit"><span>Жүйеге кіру</span><b>↗</b></button>
+      <p class="message" id="message" role="status"></p>
+    </form>
+    <div class="secure-note"><span>♧</span> Деректер сервердегі TXT файлда сақталады</div>
+  </section>
+  <section class="dashboard hidden" id="dashboard">
+    <div class="dashboard-top"><span class="status-dot"></span> ЖЕКЕ КАБИНЕТ</div><div class="avatar">✦</div>
+    <h2>Қош келдіңіз, <span id="welcomeName"></span>!</h2><p>Жүйеге сәтті кірдіңіз. Жеке кабинетіңіз дайын.</p>
+    <div class="user-details"><div><small>ҚОЛДАНУШЫ ID</small><strong id="userId">—</strong></div><div><small>ЛОГИН</small><strong id="userLogin">—</strong></div></div>
+    <button class="submit-btn logout-btn" id="logoutBtn"><span>Жүйеден шығу</span><b>↗</b></button>
+  </section>
+</main>
+<footer><span>© 2026 IT INFRASTRUCTURE</span><span>ЖОБАНЫ ОРЫНДАҒАН: САЙПОЛЛА АСХАТ</span></footer>
+<script src="app.js"></script>
+</body></html>
